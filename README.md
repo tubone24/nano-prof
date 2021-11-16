@@ -1,48 +1,17 @@
-# Nano JSX Template
+# nano_prof
 
-A [Nano JSX](https://nanojsx.github.io/) Template for building Isomorphic JSX Apps.
+## Precondition
 
-## Download
+- deno 1.16.x
 
-```bash
-# download
-npx degit nanojsx/template nano
+start local server with npm script
 
-# directory
-cd nano
-
-# install
-npm i
-
-# development
+```
 npm start
-
-# production
-npm run build
-
-# serve
-npm run serve
 ```
 
-## Structure
+or run manual
 
-```bash
-root
-├── public            # all your static files
-├── src
-│    ├── client       # bundles for hydration
-│    ├── components   # your custom components
-│    ├── layouts      # your app's layouts
-│    ├── pages        # your pages
-│    └── server       # all server-side code
 ```
-
-Every file in `/client` will be bundles separately.
-
-## TODOs
-
-All the things below will hopefully be implemented soon.
-
-- Auto refresh browser on changes
-- Improve Service Worker cache strategy
-- Pre-Render to static HTML
+deno run --no-check --allow-net --allow-read --unstable --config tsconfig.json server.tsx
+```
